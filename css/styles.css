@@ -4,6 +4,7 @@
   --banner-bg-color: #2f303a;
   --team-bg-color: #f5f4fa;
   --benefit-logo-bg-color: #f5f4fa;
+  --what-we-doing-bg-color: rgba(47, 48, 58, 0.8);
   --footer-bg-color: #2f303a;
   --primary-title-color: #212121;
   --secondary-title-color: #ffffff;
@@ -318,8 +319,30 @@ ul {
   display: flex;
 }
 
+.what-we-doing-item {
+  position: relative;
+  display: flex;
+}
+
 .what-we-doing-item:nth-child(n + 2) {
   margin-left: 30px;
+}
+
+.what-we-doing-text {
+  background-color: var(--what-we-doing-bg-color);
+  color: var(--secondery-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* Наша команда */
